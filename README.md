@@ -17,7 +17,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [desse link]([https://www.figma.com/file/qhzJ5XBMi9QAaifj2SQoWZ/NLW-eSports-(Community)?node-id=79%3A2502]). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/qhzJ5XBMi9QAaifj2SQoWZ/NLW-eSports-(Community)?node-id=79%3A2502). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ---
 
