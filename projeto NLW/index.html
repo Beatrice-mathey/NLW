@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--google fonte/search:inter/ escolha tam (400 e 900)/copia e cola kink aqui-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Inter:wght@400;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLW Esports</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+
+</head>
+<body>
+   <header>
+    <div>
+        <img src="data:image/png;base64,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" alt="LOGO NATIONAL GEOGRAPHIC">
+    </div>
+   </header>
+   
+   <main>
+
+        <section>
+            <div>
+                <h2>NATIONAL GEOGRAPHIC</h2>
+                <p>Atualidades</p>
+
+                <ul class="arqueology-list">
+                    <li>
+                        
+                        <a
+                        target="_blank"
+                        href="https://www.nationalgeographicbrasil.com/historia/2022/09/quem-foram-os-maias-conheca-os-segredos-desta-antiga-civilizacao">
+                        <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/gettyimages-122320305a.webp?w=90&h=120" alt="img maias antigos"></a>
+                    </li>
+
+                    <li>
+                        <a
+                        target="_blank"
+                        href="https://www.nationalgeographicbrasil.com/historia/2021/05/arqueologos-descobrem-monumento-misterioso-que-estava-evidente">
+                        <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/nationalgeographic_2714860.webp?w=90&h=120" alt="img piramide maia" >
+                    </a>
+                    </li>
+
+                    <li>
+                        <a
+                        target="_blank"
+                        href="https://www.nationalgeographicbrasil.com/historia/estatua-gigante-de-ramses-ii-chega-ao-grande-museu-egipcio">
+                        <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/180125-egypt-ramses-ii-statue-move-vin-spd.webp?w=90&h=120" alt="img estatua egipcia">
+                    </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div>
+              <h2>Documentários</h2>
+                <p>Ciência</p>
+
+                <ul class="science-list">
+                    <li>
+                        
+                        <a
+                        target="_blank"
+                        href="https://www.nationalgeographicbrasil.com/meio-ambiente/2022/09/nat-geo-podcast-episodio-4-alem-do-oceano">
+                        <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/ngpodcastyoutubeep41920x1080pxv2bra.webp?w=150&h=150" alt="img oceano"></a>
+                    </li>
+
+                    <li>
+                        <a
+                        target="_blank"
+                        href="https://www.nationalgeographicbrasil.com/historia/2022/09/conheca-as-cinco-pandemias-mais-mortais-da-historia-da-humanidade">
+                        <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/4096px-1918_flu_in_oakland.webp?w=150&h=150" alt="img pandemia" >
+                    </a>
+                    </li>
+
+                    <li>
+                        <a
+                        target="_blank"
+                        href="https://www.nationalgeographicbrasil.com/espaco/2022/08/eventos-astronomicos-de-setembro-de-2022-como-e-quando-ver-a-oposicao-de-netuno">
+                        <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/jwst2022-07-27jupiter.webp?w=150&h=150" alt="img astronomica">
+                    </a>
+                    </li>
+
+                    <li>
+                        <a
+                        target="_blank"
+                        href="https://www.nationalgeographicbrasil.com/animais/jiboia">
+                        <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/boa-constrictor.webp?w=150&h=150" alt="img cobra">
+                    </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        
+        <section>
+            <div>
+                <h2>Redes sociais</h2>
+                <p>acesse:</p>
+
+                <ul class="social-list">
+                    <li>
+                        <!--img não é do facebook-->
+                        <a
+                        target="_blank" 
+                        href="http://www.facebook.com/natgeo.brasil">
+                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.2824 25H15.8426C15.6011 25.0001 15.3678 25.0844 15.1852 25.2375L9.28125 30V25H6.1875C5.914 25 5.65169 24.8946 5.4583 24.7071C5.2649 24.5196 5.15625 24.2652 5.15625 24V6C5.15625 5.73478 5.2649 5.48043 5.4583 5.29289C5.65169 5.10536 5.914 5 6.1875 5H26.8125C27.086 5 27.3483 5.10536 27.5417 5.29289C27.7351 5.48043 27.8438 5.73478 27.8438 6V19.5375C27.8417 19.6832 27.8072 19.8267 27.7427 19.9583C27.6782 20.0899 27.5851 20.2065 27.4699 20.3L21.9398 24.7625C21.7572 24.9156 21.5239 24.9999 21.2824 25V25Z" stroke="#9A35FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.6562 11V17" stroke="#9A35FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.4688 11V17" stroke="#9A35FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            
+                        
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                        target="_blank"
+                        href="http://www.twitter.com/natgeobrasil">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 11C16 8.25003 18.3125 5.96253 21.0625 6.00003C22.0256 6.01115 22.9649 6.30018 23.7676 6.83237C24.5704 7.36457 25.2023 8.11728 25.5875 9.00003H30L25.9625 13.0375C25.7019 17.0932 23.9066 20.8975 20.9415 23.6769C17.9764 26.4562 14.0641 28.002 10 28C6 28 5 26.5 5 26.5C5 26.5 9 25 11 22C11 22 3 18 5 7.00003C5 7.00003 10 12 16 13V11Z" stroke="#2871FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                         </a>
+                    </li>
+
+                    <li>
+                        <a
+                        target="_blank"
+                        href="http://www.instagram.com/natgeobrasil">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z" stroke="#FA41FE" stroke-width="2" stroke-miterlimit="10"/>
+                            <path d="M21.5 4.5H10.5C7.18629 4.5 4.5 7.18629 4.5 10.5V21.5C4.5 24.8137 7.18629 27.5 10.5 27.5H21.5C24.8137 27.5 27.5 24.8137 27.5 21.5V10.5C27.5 7.18629 24.8137 4.5 21.5 4.5Z" stroke="#FA41FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22.5 11C23.3284 11 24 10.3284 24 9.5C24 8.67157 23.3284 8 22.5 8C21.6716 8 21 8.67157 21 9.5C21 10.3284 21.6716 11 22.5 11Z" fill="#FA41FE"/>
+                        </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                        target="_blank"
+                        href="https://www.youtube.com/channel/UCFupUY6CNLg5Z7U7u4oEb5w">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 16L14 12V20L20 16Z" stroke="#F40000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 16C3 19.725 3.3875 21.9 3.675 23.025C3.75427 23.3302 3.90418 23.6126 4.11262 23.8493C4.32106 24.0859 4.58221 24.2703 4.875 24.3875C9.0625 25.9875 16 25.95 16 25.95C16 25.95 22.9375 25.9875 27.125 24.3875C27.4178 24.2703 27.6789 24.0859 27.8874 23.8493C28.0958 23.6126 28.2457 23.3302 28.325 23.025C28.6125 21.9 29 19.725 29 16C29 12.275 28.6125 10.1 28.325 8.975C28.2457 8.66975 28.0958 8.38741 27.8874 8.15074C27.6789 7.91407 27.4178 7.7297 27.125 7.6125C22.9375 6.0125 16 6.05 16 6.05C16 6.05 9.0625 6.0125 4.875 7.6125C4.58221 7.7297 4.32106 7.91407 4.11262 8.15074C3.90418 8.38741 3.75427 8.66975 3.675 8.975C3.3875 10.1 3 12.275 3 16Z" stroke="#F40000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+   </main>
+    
+</body>
+</html>

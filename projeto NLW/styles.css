@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul { /*cancela os pontos das il */
+    list-style: none;
+}
+
+body *{
+    font-family: 'Inter', sans-serif; /*se não encontrar a fonte inter, puxa a sans-serif fonte no html do google fontes*/
+    line-height: 160%; 
+}
+
+body{
+    background-image: url('./img/Fundo.jpg'); /*img total fundo = salvo do figma/design/export/tam 1,5(nesse caso)/jpg/export fundo/salva na past img*/
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+/*main *{
+    border: 1px solid red; }
+    
+    usado para dar referencia ao projeto, mostra o que está dentro de main
+*/
+
+header {
+   padding-top: 32px;
+   /* text-align: center; a DIV abaixo não pega esta tag por ser text*/ 
+   
+
+}
+
+header div {
+    width: 260px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0% /*cor inicio da margem*/, #43E7AD 50.52%, #E2D45C 100%/*final do final da margin degrade*/);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .3s; /*puxa a info debaixo*/
+}
+
+header div:hover { /* aumento da img passando muse sobre*/
+    transform: scale(1.1);
+
+}
+
+header img { 
+    width: 250px;
+    border-radius: 50%;
+   
+}
+
+main{
+    max-width: 580px;
+    width: 90%;
+    display: grid;
+    gap: 24px;
+    margin: 32px/*margem no topo entre il e header e margem no final da pag*/ auto; /*margens entre as il e nas laterais*/; 
+
+}
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover{
+    transform: scale(1.1);
+}
+
+section {
+    color: white;
+    padding-top: 4px; /*espaço entre a margem colorida e o bloco il*/
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #9572FC 0% /*cor inicio da margem*/, #43E7AD 50.52%, #E2D45C 100%/*final do final da margin degrade*/);
+
+}
+
+section div {
+    background-color: #2A2634; 
+    padding: 32px; /*espaço interno da il laterais e baixo*/
+    padding-top: 24px; /*espaço interno da il cima*/
+    border-radius: 8px;
+}
+
+section h2 {
+    letter-spacing: -0.47px; /*espaço entre as letras*/
+
+}
+
+section p {
+    letter-spacing: -0.18px; 
+    color: #A1A1AA;
+}
+
+section ul {
+    display: flex;
+    gap: 16px; /*gap só funciona com display felx junto*/
+    margin-top: 24px; /*espaço entre caixas*/
+    flex-wrap: wrap; /*faz com que se colocado mais imgs, elas desçam(quebrem) e não saiam da página*/
+    
+}
+.arqueology-list img {
+ width: 90%;
+ border-radius: 8px;
+}
+
+.science-list img {
+    width: 70px;
+    border-radius: 50px;
+    border: 1px colid #443E54;
+}
+
+/*ANIMATION*/
+
+header div {
+    animation: fromTop .7s 1s backwards;
+   
+}
+
+
+
+@keyframes /*inicio da animação*/ fromTop{
+    from /*inicio*/ {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to/*final */{
+        opacity: 1;
+        transform: translateY(0);
+}
+}
+
+main section {
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1) /*filho section n 1 da main*/ {
+    animation-delay: 0;
+}
+
+main section:nth-child(2) /*filho section n 2 da main*/ {
+    animation-delay: .4s;
+}
+
+main section:nth-child(3) /*filho section n 3 da main*/ {
+    animation-delay: .8s;
+}
+
+
+
+@keyframes /*inicio da animação*/ fromBottom{
+    from /*inicio*/ {
+        opacity: 0;
+        transform: translateY(30px); /*o Y puxa a img de cima pra baixo o X ouxa a img de lado*/
+    }
+
+    to/*final */{
+        opacity: 1;
+        transform: translateY(0);
+}
+}
