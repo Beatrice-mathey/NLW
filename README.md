@@ -2,6 +2,9 @@
   <img alt="Logo" src="https://global-uploads.webflow.com/61d83a2ebb0ae01ab96e841a/630ced17a99fbd99b6169b52_Logo-NLW-eSports.svg" width="25%">
 </h1>
 
+<div align="center">
+<img src='https://user-images.githubusercontent.com/102373019/190482951-1ad08376-85e3-4618-8ad7-4392aa3e7d5c.png' width:700px>
+</div>
 
 
 ## 🚀 Tecnologias
